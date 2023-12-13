@@ -1,0 +1,7 @@
+from django.db import models
+
+class Product(models.Model):
+    title = models.CharField(max_length=255)
+    
+    # Specify an explicit primary key field (for example, using BigAutoField)
+    id = models.BigAutoField(primary_key=True)
